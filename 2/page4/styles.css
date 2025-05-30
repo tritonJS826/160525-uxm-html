@@ -1,0 +1,12 @@
+.border-style {
+    width: 300px;
+    height: 200px;
+    background-color: lightblue;
+    border-top: 2px solid red;
+    border-bottom: 2px dotted red;
+    border-left: 2px double red;
+    border-right: 2px ridge red;
+}
+
+
+

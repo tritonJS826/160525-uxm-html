@@ -1,3 +1,9 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .welcome1 {
     color: blue;
     margin: 2px
