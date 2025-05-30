@@ -1,0 +1,25 @@
+.welcome1 {
+    color: blue;
+    margin: 2px
+}
+
+.welcome2 {
+    font-size: 64px;
+}
+
+
+/* #block {
+    color: lightblue
+} */
+
+h1 {
+    color: red;
+}
+
+a[href="http://www.wiki.com"] {
+    font-size: 64px;
+}
+
+big {
+    font-size: 64px;
+}
