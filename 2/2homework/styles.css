@@ -1,0 +1,28 @@
+body {
+    background-color: #ADD8E6;
+    padding: 0;
+    margin: 0;
+}
+
+.header1 {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 44px;
+}
+
+h4 {
+    margin: 2px;
+}
+
+.block {
+    background-color: #00FFFF;
+    margin: 4px;
+    border-radius: 10px;
+    padding: 6px;
+}
+
+p {
+    margin-bottom: 4px;
+}

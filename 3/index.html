@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="header1" style="font-size: 60px;">Заголовок страницы 1</h1>
+    <h2 class="header2">Заголовок страницы 2</h2>
+    <h3 class="header3">Заголовок страницы 3</h3>
+    <h4 class="header4">Заголовок страницы 4</h4>
+    <h5 class="header5">Заголовок страницы 5</h5>
+    <h6 class="header6">Заголовок страницы 6 <span class="text">Это часть заголовка</span> </h6>
+    <p class="paragraph1">Это первый параграф. <span class="text">Это часть параграфа</span></p>
+    <p class="paragraph2">
+        Это <b>второй параграф</b>. Это <strong>второй параграф</strong> .Это второй параграф.Это второй параграф.Это второй параграф.Это второй параграф.Это второй параграф.
+        </br>
+        Это <i>второй параграф</i>. <em>Это второй</em> <u>параграф</u>.Это второй параграф.Это второй параграф.
+        Это второй параграф.Это второй параграф.Это второй параграф.
+
+        <pre>
+            one     two<sup>1</sup><sub>2</sub>
+
+            three
+            four
+        </pre>
+        <p>
+            Это второй <small>параграф</small>
+        </p>
+        <address>
+            <strong>Адрес:</strong> г. Москва, ул. Примерная, д. 1
+        </address>
+        <p>
+            Это <mark>второй</mark> <abbr title="Definition paragraph">ПРГРФ</abbr>
+            </br>
+
+            Это <kbd>второй</kbd> параграф
+        </p>
+
+        List:
+        <ul>
+            <li>Первый элемент списка</li>
+            <li>Второй элемент списка</li>
+            <li>Третий элемент списка</li>
+        </ul>
+        
+
+        Ordered List:
+        <ol>
+            <li>Первый элемент списка</li>
+            <li>Второй элемент списка</li>
+            <li>Третий элемент списка</li>
+        </ol>
+
+        Definition list:
+        <dl>
+            <dt>Определение 1</dt>
+            <dd>Описание определения 1</dd>
+            <dt>Определение 2</dt>
+            <dd>Описание определения 2</dd>
+        </dl>
+        <a href="https://example.com" class="link">Ссылка на пример</a>
+
+        // bmp png jpeg webp svg gif
+        <img src="img/p-simpsons.webp" alt="Пример изображения" class="image">
+
+        <br/>
+
+        // .mp4 codec h264, h265, av1, vp9
+        <video controls class="video">
+            <source src="media/2025-06-03_11-32-36.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+        
+        <br/>
+
+        <audio controls class="audio">
+            <source src="media/2025-06-03_11-32-36.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио.
+        </audio>
+    </p>
+
+    // css grid flexbox
+    <table>
+        <thead>
+            <tr>
+                <th>Заголовок 1</th>
+                <th>Заголовок 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="img/p-simpsons.webp" alt="Пример изображения" class="timage"></td>
+                <td>Ячейка 2</td>
+
+            </tr>
+        </tbody>
+        <!-- table row -->
+        <tfoot> 
+            <tr>
+                <td>Ячейка 4</td>
+                <td><img src="img/p-simpsons.webp" alt="Пример изображения" class="timage"></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <form>
+        <label for="input1">Введите текст (Input text)*:</label>
+        <input value="Viktar" type="text" id="input1" name="input1" class="input-text" placeholder="Введите текст здесь" required>
+
+        <br/>
+
+        <label for="input2">Введите текст (Input password):</label>
+        <input type="password" id="input2" name="input2" class="input-text">
+
+        <br/>
+
+        <label for="input3">Введите текст (Input radio):</label>
+        <input type="radio" id="input3" name="input3" class="input-text"> 10 years
+        <input type="radio" id="input3" name="input3" class="input-text"> 20 years
+
+        <br/>
+
+        <label for="input4">Введите текст (Input checkbox):</label>
+        <input type="checkbox" id="input4" name="input4" class="input-text"> icecream
+        <input type="checkbox" id="input4" name="input4" class="input-text"> salad
+        <input type="checkbox" id="input4" name="input4" class="input-text"> pizza
+
+        <br/>
+
+        <label for="input5">Введите текст (Input hidden):</label>
+        <input type="hidden" id="input5" name="input5" class="input-text" value="date: now">
+        <input type="hidden" id="input5" name="input5" class="input-text" value="time: 12:00">
+
+        <br/>
+
+        <label for="input6">Введите текст (Input button):</label>
+        <input type="button" id="input6" name="input6" class="input-text" value="Click me">
+        
+        <br/>
+        
+        <label for="input7">Введите текст (Input button):</label>
+        <input type="submit" id="input7" name="input7" class="input-text" value="Submit">
+        
+        <br/>
+        
+        <label for="input8">Введите текст (Input file):</label>
+        <input 
+        type="file" 
+        multiple="true" 
+        id="input8" 
+        name="input8"
+        class="input-file"value="Upload file"
+        accept=".jpg, .jpeg, .png, .gif, .webp, .svg"
+        >
+
+        <br/>
+
+        <label for="input9">Введите текст (Input color):</label>
+        <input type="color" id="input9" name="input9" class="input-text">
+
+        <br/>
+
+        <label for="input10">Введите текст (Input range):</label>
+        <input type="range" min="1" max="10" step="1" id="input10" name="input10" class="input-text">
+
+        <br/>
+
+        <label for="input11">Введите текст (Input date):</label>
+        <input type="date" id="input11" name="input11" class="input-text">
+
+    </form>
+    
+    <button name="button" type="button" class="button" value="secret value" disabled>Кнопка</button>
+
+    <div class="parent">
+        <div class="child1">Дочерний элемент 1</div>
+        <div class="child1">Дочерний элемент 2</div>
+        <div class="child1">Дочерний элемент 3</div>
+        <div class="child1">Дочерний элемент 4</div>
+    </div>
+
+
+    <form>
+        <input type="text" placeholder="Login" class="input-text">
+        <input type="password" placeholder="Password" class="input-text">
+        <input type="submit" value="Login" class="input-text">
+        <input type="reset" value="Reset" class="input-text">
+    </form>
+
+    <div class="container">
+        Container
+        <div class="box-text">Box-text</div>
+        <!-- <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div> -->
+    </div>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    <div class="block-div">Text</div>
+    <div class="block-div"><img src="img/p-simpsons.webp" alt="Пример изображения" class="image-div"></div>
+    <div class="block-div">
+        <a href="https://google.com" class="link-div"><img src="img/p-simpsons.webp" alt="Пример изображения" class="image-div"></a>
+        <a href="https://google.com" class="link-div"><img src="img/p-simpsons.webp" alt="Пример изображения" class="image-div"></a>
+        <a href="https://google.com" class="link-div"><img src="img/p-simpsons.webp" alt="Пример изображения" class="image-div"></a>
+        <a href="https://google.com" class="link-div"><img src="img/p-simpsons.webp" alt="Пример изображения" class="image-div"></a>
+
+    </div>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+</body>
+</html>
