@@ -33,7 +33,7 @@ td {
     padding: 0;
     border: 0;
     width: 24%;
-    background-color: lemonchiffon;
+    /* background-color: lemonchiffon; */
 }
 
 .header1 {
@@ -96,5 +96,54 @@ td {
     width: 200px;
     height: 300px;
     margin: 20px;
+}
 
+/* 00001 */
+* { 
+    /* background-color: aqua; */
+}
+
+
+/* 00010 */
+div {
+    /* background-color: red; */
+    width: 50vw;
+    height: 80vh;
+}
+
+/* 00100 */
+.modal {
+    background-color: blue;
+    width: 50vw;
+    height: 80vh;
+}
+
+/* 01000 */ 
+#modal-block {
+    background-color: green;
+    width: 50vw;
+    height: 80vh;
+}
+
+/* 0 0 1 0 0 */
+.child1, .child2 {
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+}
+
+/* .child2 inside .modal */
+/* 0 0 2 0 0 */
+.modal .child2 {
+    background-color: yellow;
+}
+
+/* 00001 * */
+/* 00010 tag */ 
+/* 00100 class */ 
+/* 01000 id */ 
+
+/* All div and .child2 */
+/* 0 0 1 1 0 */
+div.child2 { 
 }
