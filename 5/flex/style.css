@@ -1,0 +1,53 @@
+.parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    width: 50%;
+    min-height: 600px;
+    background: green;
+}
+
+.child {
+    min-width: 100px;
+    max-width: 100px;
+    height: 100px;
+    margin: 3px;
+    background: red;
+}
+
+.horizontal-panel {
+    display: flex;
+    justify-content: space-between;
+    min-width: 100vw;
+    height: 20vh;
+    padding: 3px;
+    background-color: blue;
+}
+
+.widget1 {
+    min-width: 600px;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    padding: 3x;
+    gap: 8px;
+
+}
+
+.widget2 {
+    min-width: 300px;
+    background-color: red;
+    padding: 3px;
+}
+
+.widget3 {
+    min-width: 300px;
+    background-color: red;
+    padding: 3px;
+}
+
+.nested-element {
+    background-color: yellow;
+}
