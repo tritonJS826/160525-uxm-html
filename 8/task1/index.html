@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <form class="form" name="super">
+        <div>
+            <h2 class="form-title">
+                Купить в 1 клик
+            </h2>
+            <hr class="separator">
+        </div>
+
+        <label for="fio">
+            Ф.И.О 
+            <span class="red-text">
+                *
+            </span>
+        </label>
+        <input class="input-text" type="text" id="fio" name="fio" required placeholder="ФИО" maxlength="15">
+
+
+        <label for="number">
+            Number
+            <span class="red-text">
+                *
+            </span>
+        </label>
+        <input class="input-text" type="number" id="number" name="number" required placeholder="some number" max="100" min="80">
+     
+        <label for="phone">
+            Телефон 
+            <span class="red-text">
+                *
+            </span>
+        </label>
+        <input class="input-text" type="tel" id="phone" name="phone" required placeholder="Phone">
+
+        <div>
+            <input type="" type="checkbox" id="consent" name="consent" required>
+            <label for="consent">
+                Я согласен на 
+                <a href="https://www.google.com" target="_blank" class="red-text">
+                    обработку персональных данных
+                </a>
+            </label>
+        </div>
+
+        <input type="file">
+
+        <input type="file">
+
+        <button class="submit-btn" type="submit">
+            Отправить
+        </button>
+    </form>
+
+</body>
+
+</html>

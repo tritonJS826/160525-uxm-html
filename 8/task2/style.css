@@ -1,0 +1,45 @@
+.parent {
+    display: flex;
+}
+
+.item1 {
+    position: static;
+    width: 140px;
+    height: 140px;
+    background-color: red;
+    height: 2000px;
+}
+
+.item2 {
+    position: fixed;
+    width: 140px;
+    height: 140px;
+    background-color: green;
+    right: 20px    
+}
+
+.item3 {
+    position: static;
+    width: 140px;
+    height: 140px;
+    background-color: blue;
+}
+
+
+
+.black-square {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  
+  background: black;
+  color: #FFF;
+}
+
+.animate-hover:hover {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  
+  cursor: pointer;
+}
