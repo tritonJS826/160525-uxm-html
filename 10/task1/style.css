@@ -1,0 +1,202 @@
+/* * {
+    transition-duration: 5s;
+    transition-property: "color";
+    transition-timing-function: ease;
+    transition-timing-function: linear;
+} */
+
+/* 7s linear ease
+1s      100 100
+2s      114 110
+3s      129 135
+4s      143 150
+5s      161 165
+6s      184 190
+7s      200 200
+rgb(135, 100, 100) */
+
+.parent {
+    /* transition-duration: 3s; */
+    animation: 3s ease-out 0s 1 slideInFromLeft;
+    width: 160px;
+    height: 160px;
+    background-color: blue;
+    cursor: pointer;
+}
+
+.parent:hover {
+    background-color: red;
+}
+
+.button {
+    background-color: blue;
+    cursor: pointer;
+}
+
+.button:active {
+    background-color: rgb(157, 157, 250);
+}
+
+.link:hover {
+    background: yellow;
+}
+
+.link:link {
+    color: green;
+}
+
+.link:visited {
+    color: red;
+}
+
+.form {
+    border: 1px solid black;
+    padding: 8px;
+    margin: 8px;
+    /* transition-duration: 3s; */
+
+}
+
+.form:focus-within {
+    background-color: aliceblue;
+    transform: scale(1.02);
+}
+
+.btn {
+    /* transition-duration: 3s; */
+    /* display: none; */
+    opacity: 0;
+}
+
+.form:focus-within .btn {
+    /* display: inline; */
+    opacity: 1;
+}
+
+.list {
+    padding: 20px;
+    border: 2px solid black;
+}
+
+/* .child:first-child {
+    background-color: red;
+} */
+
+/* .first-block-ads {
+    background-color: red;
+} */
+
+/* .child:last-child {
+    background-color: green;
+}
+
+.child:nth-child(4) {
+    background-color: blueviolet;
+} */
+
+.add-doc-btn {
+    display: none;
+}
+
+.add-doc-btn:only-child {
+    display: block;
+}
+
+/* .child:nth-child(odd) {
+    background-color: rgb(203, 240, 240);
+} */
+
+.child:nth-child(3n) {
+    background-color: rgb(196, 245, 245);
+}
+
+.child:nth-child(3n+1) {
+    background-color: rgb(196, 209, 245);
+}
+
+.child:nth-child(3n+2) {
+    background-color: rgb(209, 196, 245);
+}
+
+/* .child::before {
+    content: "😊";
+} */
+
+.child::first-letter {
+    font-size: 30px;
+    color: red;
+}
+
+.first-letter {
+    font-size: 30px;
+    color: red;
+}
+
+.child::selection {
+    background-color: black;
+    color: red;
+}
+
+ul li::marker {
+    color: red;
+    font-size: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .anim:hover {
+    background-color: red;
+    color: yellow;
+    width: 100%; 
+} */
+
+/* .anim {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    
+    animation-name: slideInFromLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+} */
+
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(300%);
+  }
+  53% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
