@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: grid;
+    border: 2px solid red;
+    /* Using shorthand grid-template below; grid-template-columns and grid-template-rows are not needed */
+
+    /* grid-column-gap: 20px;
+    grid-row-gap: 40px; */
+    /* grid-gap: 20px; */
+
+    grid:
+        "header header header" 40px
+        "side   main   main" 40px
+        "side   main   main" 40px / 1fr 1fr 1fr;
+}
+
+.grid > div {
+    border: 2px solid coral;
+    background-color: peachpuff;
+    border-radius: 10px;
+    /* padding: 16px; */
+}
+
+.grid > .header {
+    grid-area: header;
+}
+
+.grid > .side {
+    grid-area: side;
+}
+
+.grid > .main {
+    grid-area: main;
+}
