@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: grid;
+    border: 2px solid red;
+    /* Using shorthand grid-template below; grid-template-columns and grid-template-rows are not needed */
+
+    /* grid-column-gap: 20px;
+    grid-row-gap: 40px; */
+    /* grid-gap: 20px; */
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px repeat(auto-fill, 100px) 60px;
+
+    /* grid:
+        "header header header" 40px
+        "side   main   main" 40px
+        "side   main   main" 40px / 1fr 1fr 1fr; */
+}
+
+
+.grid-item {
+    border: 1px solid black;
+}
+
+.grid-item.header {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: red;
+    z-index: 2;
+}
+
+.grid-item.navmenu {
+    grid-column-start: 10;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    grid-row-end: 8;
+    background-color: blue;
+}
+
+.grid-item.main {
+    grid-column: 1 / 10;
+    grid-row: 2 / 7;
+}
+
+.grid-item.footer {
+    grid-column: 1 / 10;
+    grid-row: 7 / 7;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr minmax(300px, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.main > div {
+    border: 1px solid blue;
+}
