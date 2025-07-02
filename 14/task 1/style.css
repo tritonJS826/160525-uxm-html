@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    background-color: red;
+}
+
+/* more than 651 */
+@media (min-width: 651px) {
+    .container {
+        background-color: green;
+    }
+}
+
+/* less than 650px */
+@media screen and (max-width: 650px) {
+    .container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 8px;
+        min-height: 100%;
+        background-color: blue;
+    }
+
+    .container div {
+        width: 100%;
+    }
+}
+
+/* adaptive */
+@media (min-width: 650px) and (max-width: 900px)  {
+    .container {
+        background-color: yellow;
+    }
+}
+
+/* 300px-650px | 650px-900px | 901px-1440px */
+
+
+/* mobile 320-500 */
+/* tablet 500-900 */
+/* min-desktop 900-1280/1440 */
+/* desktop 1280-2000 */
+/* large desktop 2000+ */
+
+
+/* flexible, elastic */
+.container2 {
+    height: 100%;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid black;
+    overflow-x: scroll;
+}
+
+.word-wrap {
+    /* word-wrap: break-word; */
+}
+
+
+/* responsive = flexible + adaptive */
