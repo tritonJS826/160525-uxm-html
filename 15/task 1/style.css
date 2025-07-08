@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   background-color: #FFF9E5;
+}
+
+.page-wrap {
+    display: flex;
+}
+
+.aside-back {
+    display: none;
+}
+
+/* Main block */
+aside {
+    margin: 16px;
+    padding: 16px;
+    border-radius: 16px;
+    background-color: #9593ff;
+    width: 320px;
+    min-width: 320px;
+    height: 91vh
+}
+
+@media (max-width: 768px) {
+    aside {
+        position: fixed;
+        margin: 0;
+        border-radius: 0;
+        width: 180px;
+        min-width: 180px;
+        height: 100vh;
+    }
+
+    .aside-back {
+        display: block;
+        width: 180px;
+        min-width: 180px;
+    }
+}
+
+@media (max-width: 420) {
+    /* aside {
+        position: fixed;
+        margin: 0;
+        border-radius: 0;
+        width: 180px;
+        min-width: 180px;
+        height: 100vh;
+    }
+
+    .aside-back {
+        display: block;
+        width: 180px;
+        min-width: 180px;
+    } */
+}
+
+/* nav {
+} */
+
+.logo {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+    border-radius: 16px;
+}
+
+ul {
+    list-style: none; 
+}
+
+li {
+    background-color: white;
+    border-radius: 8px;
+    padding: 7px;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Main block */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 16px;
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('images/0ac480f9-254c-11f0-8d92-f8fe5e2d5708.jpg.avif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+h1 {
+    color: #9593FF;
+    font-size: 36px; ;
+}
+
+p {
+    font-size: 20px;
+}
+
+/* png\bmp jpg\jpeg webp avif svg tiff */
+
+
+.cool-font {
+  font-family: "Manufacturing Consent", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+/* Variable fonts: https://fonts.google.com/variablefonts */
+@font-face {
+  font-family: "Advent Pro";
+  src: url('images/Advent_Pro/AdventPro-VariableFont_wdth,wght.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Advent Pro Italic";
+  src: url('images/Advent_Pro/AdventPro-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+  font-style: normal;
+}
+
+
+
+.cool-font2 {
+  font-family: "Advent Pro", system-ui;
+  font-style: normal;
+  font-variation-settings: "wght" 900, "wdth" 200;
+}
+
+.cool-font3 {
+  font-family: "Advent Pro", system-ui;
+  font-style: normal;
+  font-variation-settings: "wght" 300, "wdth" 100;
+}
+
+.cool-font4 {
+  font-family: "Advent Pro Italic", system-ui;
+  font-style: normal;
+  font-variation-settings: "wght" 300, "wdth" 100, "ital" 1;
+}
