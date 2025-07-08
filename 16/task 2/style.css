@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+    background-color: rgb(184, 184, 184);
+    padding: 4px 8px;
+    border-radius: 4px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+    border: none;
+}
+
+.button > a {
+    text-decoration: none;
+    color: black;
+}
+
+.button.small {
+    font-size: 8px;
+}
+
+.button.middle {
+    font-size: 16px;
+}
+
+.button.large {
+    font-size: 24px;
+}
