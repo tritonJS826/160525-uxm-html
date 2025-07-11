@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.menu {
+    display: flex;
+}
+
+.menu-item {
+    background-color: rgb(5, 182, 5);
+    padding: 8px;
+    width: 150px;
+    list-style-type: none;
+}
+
+.menu-item:nth-child(1), .menu-item:nth-child(3) {
+    max-height: 36px;
+    padding: 16px;
+}
+
+.sub {
+    display: flex;
+    flex-direction: column;
+    max-height: 36px;
+    overflow: hidden;
+}
+
+.sub:hover {
+    max-height: 108px;
+}
+
+.sub-menu-item {
+    padding: 8px;
+}
+
+.sub-menu-item:hover {
+    background-color: greenyellow;
+}
