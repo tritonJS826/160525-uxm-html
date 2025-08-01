@@ -183,3 +183,25 @@ fruits.forEach(fruit => {
     }
 })
 
+
+
+// Создайте массив слов. Найдите самое длинное слово в массиве. (У строк, также как и у массивов, есть свойство length, которое измеряет длину строки).
+const words = ['hello', 'hi', 'nice-to-see-you', 'aa', 'aaaaaa'];
+let maxLength = 0;
+words.forEach(word => {
+    console.log(`word: ${word}, maxLength: ${maxLength}`)
+    if (word.length > maxLength) {
+        console.log(`wordLength: ${word.length} updated!`)
+        maxLength = word.length; 
+    }
+})
+
+console.log(maxLength.length)
+
+// word: hello, maxLength: 0
+// wordLength: 5 updated!
+// word: hi, maxLength: 5
+// word: nice-to-see-you, maxLength: 5
+// wordLength: 15 updated!
+// word: aa, maxLength: 15
+// word: aaaaaa, maxLength: 15

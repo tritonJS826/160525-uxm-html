@@ -262,6 +262,8 @@ console.log(countElements(numArray2, 3)); // 6
 
 
 
+
+
 // Напишите функцию, которая проверяет, есть ли заданный ключ в объекте.
 const obj = {
     key1: "1",
@@ -310,4 +312,23 @@ function displayStudentInfo(student) {
 }
 
 students.forEach(student => displayStudentInfo(student));
+
+
 students.forEach(displayStudentInfo);
+
+
+
+fillCap()
+addSugar()
+
+
+
+function makeTea(fillCap, addSugar) {
+    fillCap();
+    addSugar();
+}
+
+
+makeTea(fillCap, addSugar);
+makeTea(fillCap, addJam);
+
