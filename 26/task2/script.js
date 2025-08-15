@@ -142,4 +142,9 @@ paragraph.addEventListener('click', (event) => {
 })
 
 
+console.log('script.js loaded');
+
+
+
+
 
