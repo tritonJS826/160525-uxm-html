@@ -72,6 +72,7 @@ text.addEventListener('dblclick', () => {
 // У вас есть кнопка и блок текста. При каждом клике на кнопку, переключайте видимость блока текста. Если блок виден, скройте его, и наоборот.
 const button5 = document.getElementById("button5");
 const textBlock = document.getElementById("textBlock");
-button5.addEventListener('click', () => {
+button5.addEventListener('click', (event) => {
     textBlock.classList.toggle('invisible');
+    console.log(event)
 })

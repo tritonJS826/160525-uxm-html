@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname">
+        <br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <span id="emailErrorSpan" class="red"></span>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <br>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+        <br>
+        <input type="checkbox" id="subscription" name="subscription">
+        <label for="subscription">Subscribed?</label>
+        <br>
+        <button id="submit" type="submit">Submit</button>
+        <button id="resetButton" type="reset">Reset</button>
+        <br>
+        <p id="result"></p>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

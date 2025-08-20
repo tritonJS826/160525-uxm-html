@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <br>
+        <select id="language" name="language">
+            <option value="ru">Русский</option>
+            <option value="en">English</option>
+            <option value="de">Deutsch</option>
+            <option value="fr">Français</option>
+        </select>
+        <br>
+            <label>Цвет фона:</label>
+
+            <input type="radio" id="colorWhite" name="bgcolor" value="white" checked>
+            <label for="colorWhite">Белый</label>
+            
+            <input type="radio" id="colorLightblue" name="bgcolor" value="lightblue">
+            <label for="colorLightblue">Голубой</label>
+
+            <input type="radio" id="colorLightgreen" name="bgcolor" value="lightgreen">
+            <label for="colorLightgreen">Зелёный</label>
+            
+            <input type="radio" id="colorLightyellow" name="bgcolor" value="lightyellow">
+            <label for="colorLightyellow">Жёлтый</label>
+        <br>
+        
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description">
+        <span id="descriptionLength">0</span>
+    
+        <br>
+        <button type="submit">Отправить</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

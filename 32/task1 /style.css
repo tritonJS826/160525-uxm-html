@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    max-width: 1920px;
+}
+
+.header {
+    height: 54px;
+    background-color: #323232;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header_text {
+    color: #FFFFFF;
+    margin-right: 40px;
+
+    font-family: "Inter";
+    font-weight: 600;
+    /* font-style: Semi Bold; */
+    font-size: 13.83px;
+    /* leading-trim: NONE; */
+    line-height: 22.5px;
+    letter-spacing: 1.3px;
+    text-align: right;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+.header_button {
+    background-color: #FF3C00;
+    color: #FFFFFF;
+    border: none;
+    height: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    cursor: pointer;
+
+    font-family: "Inter";
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 13.83px;
+    /* leading-trim: NONE; */
+    line-height: 22.5px;
+    letter-spacing: 1.3px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+.screen1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('assets/section1background.png');
+    height: calc(100vh - 54px);
+}
+
+
+.screen1_content {
+    max-width: 1296px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.screen1_h1 {
+    font-family: "Inter";
+    font-weight: 900;
+    color: #212529;
+    font-size: 77.19px;
+    /* leading-trim: NONE; */
+    line-height: 80px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+.screen1_horizontal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.screen1_vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.screen1_description {
+    font-family: "Inter";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20.13px;
+    /* leading-trim: NONE; */
+    line-height: 33.6px;
+    letter-spacing: 0;
+    vertical-align: middle;
+    /* TODO: change on 900px after adding font inter */
+    max-width: 815px; 
+}
+
+.screen1_button {
+    background-color: #323232;
+    color: #FFFFFF;
+    height: 66px;
+    width: 218px;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+.screen1_logo {
+
+}
+
