@@ -150,19 +150,20 @@ text-transform: uppercase;
     justify-content: center;
     gap: 52px;
     padding-top: 80px;
+    background-color: white;
 }
 
 .screen2_column {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 138px;
 }
 
 .card_layout {
     display: flex;
     flex-direction: column;
+    max-width: 380px;
 }
 
 .screen2_image  {
