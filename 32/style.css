@@ -144,7 +144,7 @@ vertical-align: middle; */
 text-transform: uppercase;
 }
 
-.screen2_container {
+.container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -152,7 +152,7 @@ text-transform: uppercase;
     padding-top: 80px;
 }
 
-.screen2_column {
+.column {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,18 +160,17 @@ text-transform: uppercase;
     gap: 138px;
 }
 
-.card_layout {
-    display: flex;
-    flex-direction: column;
-}
-
 .screen2_image  {
     height: 442px;
     width: 380px;
 }
 
-.screen2_invisible {
+.invisible1 {
     height: 75px;
+}
+
+.invisible2 {
+    height: 150px;
 }
 
 .screen2_name {
@@ -219,7 +218,6 @@ text-transform: uppercase;
 
 .screen2_button {
     color: #212529;
-    margin: auto;
     background: none;
     border: none;
     border-bottom: #212529 1px solid;
