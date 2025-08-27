@@ -13,18 +13,24 @@ console.log(array) // ['first', 'second', 'third']
 
 
 
-function doSomething(action) {
+function doSomething(action1, action2) {
     console.log('start')
-    action()
+    action1()
+    action2()
     console.log('end')
+    return "Good"
 }
 
 
 function showHello() {
     console.log("Hello")
+    return "hello"
 }
-
-doSomething(showHello)
+function showHello2() {
+    console.log("Hello")
+    return "hello"
+}
+doSomething(showHello, showHello2)
 // doSomething(function() {
 //     alert("Hello")
 // })
@@ -243,7 +249,10 @@ console.log(onlyDividedOn3) // 9,12,18,24
 
 // Используя метод sort(), отсортируйте числовой массив по убыванию. 
 const array13 = [4, 2, 5, 1, 3];
-array13.sort((a,b) => b - a)
+function comparator(a,b) {
+    return b - a
+} // (a,b) => b-a
+array13.sort(comparator)
 console.log(array13)
 
 // Используя метод sort(), отсортируйте массив объектов по значению определенного свойства.
@@ -254,21 +263,28 @@ const people2 = [
 ];
 // from old to young
 people2.sort((person1, person2) => {
+    // if string start with "D" -> return "-1000000"
+    // if string start with "E" -> return "-1000001"
     return person1.age - person2.age;
 });
 
 console.log(people2.reverse());
 
 
-// callback
+// callback function
+console.log(comparator)
 
 // push\pop
+// shift/unshift
 
 // forEach
 // map
 
 // filter
 // sort
+
+
+// [0,1,2,3]
 
 
 
