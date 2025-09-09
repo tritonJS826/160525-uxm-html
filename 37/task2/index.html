@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- data-theme: light | dark -->
+<html lang="en" data-theme="light"> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,36 @@
     <title>Document</title>
 </head>
 <body>
+    <h1 id="h1Greetings">Welcome!</h1>
     
     <div id="">
+    <form action="">
+        <input name="Name" type="text" id="inputName">
+        <input name="Surname" type="text" id="inputSurname">
+        <button type="button" id="buttonSave">Save</button>
+        <button type="button" id="buttonLoad">Load Cahced Data</button>
+        <button type="reset" id="buttonResetLocalStorage">Reset Local Storage And Form</button>
+    </form>
+    <br>
+    <br>
+    <br>
+
+    <div>
+      <h1>Переключение между светлой и темной темой</h1>
+    </div>
+    <div>
+      <p>Чтобы переключить тему, нажмите кнопку</p>
+    </div>
+    <button id="buttonSwitchTheme">Переключить тему</button>
+
+    <br>
+    <br>
+    <br>
+
+    <h3>Greetings settings</h3>
+    <input type="text" name="userName" id="inputUserName">
+    <button type="button" id="buttonSaveNameGreet">Сохранить</button>
+
     <script src="script.js"></script>
 </body>
 </html>
