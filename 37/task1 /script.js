@@ -5,7 +5,6 @@ const people = [
   { name: "Bob", age: 30 },
   { name: "Charlie", age: 22 }
 ];
-
  
 
 const names = people.reduce((accumulator, person) => {
