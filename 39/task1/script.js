@@ -9,7 +9,6 @@ const inputPhoneNumber = document.querySelector(".phone");
 const inputEmail = document.querySelector(".email");
 const inputPassword = document.querySelector(".password");
 const signUpBtn = document.querySelector(".signup");
-const requiredPar = document.createElement("p");
 const body = document.querySelector("body");
 
 // получаем список пользователей из localStorage или присваиваем пустой массив
@@ -26,9 +25,9 @@ function getIsUserEmailAlreadyExist() {;
 }
 
 function showMessage(text, color) {
-    requiredPar.innerText = text;
-    requiredPar.style.color = color;
-    document.body.appendChild(requiredPar);
+    const paragraphStatus = document.getElementById("paragraphStatus")
+    paragraphStatus.innerText = text;
+    paragraphStatus.style.color = color;
 }
 
 function addNewUser(name, phoneNumber, email, password) {
@@ -50,6 +49,79 @@ function clearForm1() {
     inputPassword.value = "";
 }
 
+
+function getIsNameValid(name) {
+    // example: check everything: const nameRegex = /^[A-Za-zА-Яа-яЁё]{2,24}$/;
+    // Минимум 2 символа
+    if (name.length < 2) {
+        return false;
+    }
+
+    // Максимум 24 символа
+    if (name.length > 24) {
+        return false;
+    }
+
+    // Только буквы
+    if (!/[^a-zA-Z]/.test(name)) {
+        return false;
+    }
+
+    return true;
+
+}
+
+function getIsEmailValid(email) {
+    // Наличие символа@
+    if (!email.includes("@")) {
+        return false;
+    }
+
+    // Минимум 7 символов 
+    if (email.length < 7) {
+        return false;
+    }
+
+    return true;
+}
+
+function geiIsPhoneValid(phoneNumber) {
+    // Первый символ +
+    if (phoneNumber[0] !== "+") {
+        return false;
+    }
+
+    // Максимум 12 чисел
+    if (phoneNumber > 12) {
+        return false;
+    }
+
+    // Минимум 8 чисел
+    if (phoneNumber < 8) {
+        return false;
+    }
+
+    // Только числа
+    if (!/^\+[0-9]+$/.test(phoneNumber)) {
+        return false;
+    }
+
+    return true;
+}
+
+function getIsPasswordValid(password) {
+    // Минимум 5 символов
+    if (password < 5) {
+        return false;
+    }
+    // максимум 26 символов
+    if (password > 26) {
+        return false;
+    }
+
+    return true
+}
+
 // создадим обработчик события для кнопки регистрации
 signUpBtn.addEventListener("click", () => {
     // проверим поля на пустые значения
@@ -65,6 +137,29 @@ signUpBtn.addEventListener("click", () => {
         return;
     }
     
+    const isNameValid = getIsNameValid(inputName.value); 
+    if (!isNameValid) {
+        showMessage("Имя не подходит!", "red")
+        return;
+    }
+
+    const isEmailValid = getIsEmailValid(inputEmail.value);
+    if (!isEmailValid) {
+        showMessage("Email не подходит!", "red")
+        return;
+    }
+
+    const isPhoneValid = getIsPhoneValid(inputPhoneNumber.value);
+    if (!isPhoneValid) {
+        showMessage("Phone не подходит!", "red")
+        return;
+    }
+
+    const isPasswordValid = getIsPasswordValid(inputPassword.value);
+    if (!isPasswordValid) {
+        showMessage("Password не подходит!", "red")
+        return;
+    }
     // Everything ok below:
 
     addNewUser(inputName.value, inputPhoneNumber.value, inputEmail.value, inputPassword.value);
@@ -123,5 +218,7 @@ loginBtn.addEventListener("click", () => {
     showMessage("Вы успешно вошли", "green");
     renderLogoutButton();
 });
+
+// После реализации основного функционала проекта “Регистрации и Авторизации с помощью localstorage” реализовать валидацию инпутов (Имя, Эмейл, Телефон, Пароль) с помощью JS.
 
 

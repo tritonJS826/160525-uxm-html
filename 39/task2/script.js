@@ -6,8 +6,8 @@
 
 // console.log(3);
 
-// // 1 -> 3 -> 2
-
+//2
+ // 1 -> 3 -> 
 // setInterval(() => {
 //     console.log("Hello");
 // }, 1000);
